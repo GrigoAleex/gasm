@@ -65,16 +65,16 @@ namespace mips
         return 1 << 26 | (source << 21) | offset;
     }
 
-    u_int32_t branchOnGreaterThanZeroFunction(char **words)
-    {
-        return branchOnGreaterThanZero(words[1], words[2]);
-    }
-
     u_int32_t branchOnGreaterThanZero(char *sourceString, char *offsetString)
     {
         u_int32_t source = std::stoi(sourceString, nullptr, 16);
         u_int32_t offset = std::stoi(offsetString, nullptr, 16);
 
         return 7 << 26 | (source << 21) | offset;
+    }
+
+    u_int32_t branchOnGreaterThanZeroFunction(char **words)
+    {
+        return branchOnGreaterThanZero(words[1], words[2]);
     }
 }

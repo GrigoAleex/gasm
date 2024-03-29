@@ -20,4 +20,7 @@ namespace mips
 
     u_int32_t norFunction(char **words);
     u_int32_t nor(char *sourceString, char *targetString, char *destinationString);
+
+    u_int32_t sllFunction(char **words);
+    u_int32_t sll(char *sourceString, char *targetString, char *shiftString);
 }

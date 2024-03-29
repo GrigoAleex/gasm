@@ -14,14 +14,18 @@ namespace mips
     {
         mips::operationMap["add"] = addFunction;
         mips::operationMap["addi"] = addiFunction;
+        mips::operationMap["sub"] = subFunction;
+        mips::operationMap["subi"] = subiFunction;
         mips::operationMap["and"] = andFunction;
         mips::operationMap["or"] = orFunction;
         mips::operationMap["ori"] = oriFunction;
         mips::operationMap["xor"] = xorFunction;
         mips::operationMap["nor"] = norFunction;
         mips::operationMap["j"] = jumpFunction;
+        mips::operationMap["sll"] = sllFunction;
         mips::operationMap["jr"] = jumpRegisterFunction;
         mips::operationMap["beq"] = branchOnEqualFunction;
+        mips::operationMap["bg"] = bqFunction;
         mips::operationMap["bne"] = branchOnNotEqualFunction;
         mips::operationMap["bgez"] = branchOnGreaterOrEqualToZeroFunction;
         mips::operationMap["bgtz"] = branchOnGreaterThanZeroFunction;
